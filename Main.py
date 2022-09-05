@@ -13,7 +13,7 @@ class Stack:
     if self.head == None:
       self.head = temp
       temp.next = None
-     else:
+    else:
       temp.next = self.head
       self.head = temp
 
@@ -29,7 +29,7 @@ class Stack:
     """
     temp = self.head
     while temp.next != None:
-      print(self.data + "=>", end = "")
+      print(self.data, "=>", sep = "", end = "")
       temp = temp.next
     print("None")
 
